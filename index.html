@@ -2,312 +2,195 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Hurtownia Rowerowa Rowery-Seby</title>
+    <title>Rowery-Seby - Hurtownia</title>
     <style>
-        /* Prosty, lekko amatorski wygląd strony */
         body {
             font-family: Arial, sans-serif;
-            background-color: #eeeeee;
-            color: #000000;
+            background-color: #f0f0f0;
             margin: 0;
-            padding: 20px;
+            padding: 10px;
         }
 
-        /* Główny kontener na środku z prostą ramką */
-        .glowne-okno {
-            width: 850px;
-            margin: 0 auto;
-            background-color: #ffffff;
-            border: 2px solid #000000;
-            padding: 15px;
-        }
-
-        /* Nagłówek strony */
+        /* Nagłówek */
         .naglowek {
-            background-color: #003366;
-            color: #ffffff;
+            background-color: #004080;
+            color: white;
             text-align: center;
             padding: 15px;
-            border: 1px solid #000000;
+            border: 2px solid black;
         }
 
-        .naglowek h1 {
-            margin: 0;
-            font-size: 26px;
-        }
-
-        .naglowek p {
-            margin: 5px 0 0 0;
-            font-size: 14px;
-        }
-
-        /* Menu nawigacji */
+        /* Menu */
         .menu {
-            background-color: #dddddd;
-            border: 1px solid #000000;
-            margin: 15px 0;
-            padding: 8px;
+            background-color: #ccc;
+            padding: 10px;
             text-align: center;
+            border: 2px solid black;
+            margin-top: 10px;
         }
 
         .menu a {
-            color: #003366;
+            color: #004080;
             font-weight: bold;
-            text-decoration: underline;
-            margin: 0 10px;
+            margin: 0 15px;
         }
 
-        /* Blok sekcji */
-        .blok {
-            border: 1px solid #999999;
-            background-color: #fafafa;
-            padding: 12px;
-            margin-bottom: 15px;
+        /* Sekcje na całą szerokość */
+        .sekcja {
+            background-color: white;
+            border: 2px solid black;
+            padding: 15px;
+            margin-top: 10px;
         }
 
-        .blok h2 {
-            color: #003366;
-            font-size: 18px;
+        h2 {
+            color: #004080;
             margin-top: 0;
-            border-bottom: 1px solid #003366;
-            padding-bottom: 3px;
+            border-bottom: 1px solid #004080;
         }
 
-        /* Tabela z rowerami i częściami */
+        /* Tabela */
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 10px;
-            background-color: #ffffff;
         }
 
         table, th, td {
-            border: 1px solid #000000;
+            border: 1px solid black;
         }
 
         th {
-            background-color: #cccccc;
-            color: #000000;
-            padding: 6px;
+            background-color: #ddd;
+            padding: 8px;
             text-align: left;
-            font-size: 13px;
         }
 
         td {
-            padding: 6px;
-            font-size: 13px;
+            padding: 8px;
         }
 
-        .naglowek-kategorii {
+        .naglowek-tabeli {
             background-color: #ffffcc;
             font-weight: bold;
             text-align: center;
         }
 
-        /* Formularz kontaktowy */
-        .pole-formularza {
-            margin-bottom: 10px;
-        }
-
-        .pole-formularza label {
-            display: block;
-            font-weight: bold;
-            font-size: 13px;
-        }
-
-        .pole-formularza input, .pole-formularza select, .pole-formularza textarea {
-            width: 98%;
-            padding: 5px;
-            border: 1px solid #000000;
-            font-family: Arial, sans-serif;
-        }
-
-        button {
-            background-color: #003366;
-            color: #ffffff;
-            font-weight: bold;
-            padding: 8px 15px;
-            border: 1px solid #000000;
-            cursor: pointer;
-        }
-
         /* Stopka */
         .stopka {
-            background-color: #003366;
-            color: #ffffff;
+            background-color: #004080;
+            color: white;
             text-align: center;
             padding: 10px;
-            font-size: 12px;
-            border: 1px solid #000000;
+            border: 2px solid black;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
 
-<div class="glowne-okno">
-
     <!-- NAGŁÓWEK -->
     <div class="naglowek">
         <h1>Hurtownia Rowerowa "Rowery-Seby"</h1>
-        <p>Sprzedaż hurtowa rowerów i części zamiennych dla serwisów i sklepów</p>
+        <p>Tanie rowery i części rowerowe - sprzedaż hurtowa</p>
     </div>
 
-    <!-- MENU NAWIGACJI -->
+    <!-- MENU -->
     <div class="menu">
         <a href="#o-nas">O nas</a> | 
-        <a href="#oferta">Oferta i Tabela Cennikowa</a> | 
-        <a href="#zasady">Zasady współpracy</a> | 
-        <a href="#kontakt">Formularz zamówienia</a>
+        <a href="#oferta">Oferta i Cennik</a> | 
+        <a href="#kontakt">Kontakt</a>
     </div>
 
     <!-- O NAS -->
-    <div class="blok" id="o-nas">
-        <h2>O naszej hurtowni</h2>
-        <p>Strona hurtowni <strong>Rowery-Seby</strong>. Sprzedajemy rowery oraz części do rowerów na terenie całego kraju. Ofertę kierujemy do sklepów rowerowych, punktów serwisowych i wypożyczalni.</p>
-        <p>Posiadamy własny magazyn i wysyłamy towary kurierem. Oferujemy niskie ceny przy zakupach hurtowych.</p>
+    <div class="sekcja" id="o-nas">
+        <h2>O nas</h2>
+        <p>Sprzedajemy rowery oraz części rowerowe dla sklepów i serwisów. Mamy niskie ceny i duży wybór towaru.</p>
     </div>
 
-    <!-- TABELA I OFERTA -->
-    <div class="blok" id="oferta">
-        <h2>Tabela produktów: Rowery i Części Rowerowe</h2>
-        <p>W poniższej tabeli znajduje się spadek cenowy oraz zestawienie najpopularniejszych rowerów i części dostępnych w magazynie:</p>
+    <!-- TABELA -->
+    <div class="sekcja" id="oferta">
+        <h2>Oferta rowerów i części</h2>
 
         <table>
             <thead>
                 <tr>
-                    <th>Typ sprzętu</th>
-                    <th>Nazwa artykułu / Model</th>
-                    <th>Opis techniczny</th>
-                    <th>Min. zamówienie</th>
-                    <th>Cena hurtowa (netto)</th>
+                    <th>Kategoria</th>
+                    <th>Nazwa towaru</th>
+                    <th>Cena hurtowa</th>
                 </tr>
             </thead>
             <tbody>
                 <!-- ROWERY -->
-                <tr class="naglowek-kategorii">
-                    <td colspan="5">ROWERY FABRYCZNE</td>
+                <tr class="naglowek-tabeli">
+                    <td colspan="3">ROWERY</td>
                 </tr>
                 <tr>
                     <td>Rower Górski</td>
-                    <td>Seby Trail Expert 29"</td>
-                    <td>Rama aluminiowa, napęd 1x12, amortyzator powietrzny</td>
-                    <td>3 szt.</td>
+                    <td>Seby Trail 29"</td>
                     <td>1 450 PLN</td>
                 </tr>
                 <tr>
                     <td>Rower Miejski</td>
-                    <td>Seby City Classic 28"</td>
-                    <td>Przerzutka Shimano Nexus 7, prądnica, koszyk na zakupy</td>
-                    <td>5 szt.</td>
+                    <td>Seby City 28"</td>
                     <td>890 PLN</td>
                 </tr>
                 <tr>
                     <td>Rower Gravel</td>
-                    <td>Seby Adventure X</td>
-                    <td>Rama karbonowa, hamulce hydrauliczne tarczowe</td>
-                    <td>2 szt.</td>
+                    <td>Seby Adventure</td>
                     <td>2 600 PLN</td>
                 </tr>
-                <tr>
-                    <td>Rower Elektryczny</td>
-                    <td>Seby Power Volt Trekking</td>
-                    <td>Silnik centralny 250W, bateria 630Wh (zasięg do 100km)</td>
-                    <td>1 szt.</td>
-                    <td>4 200 PLN</td>
-                </tr>
 
-                <!-- CZĘŚCI ROWEROWE -->
-                <tr class="naglowek-kategorii">
-                    <td colspan="5">CZĘŚCI I AKCESORIA ROWEROWE</td>
+                <!-- CZĘŚCI -->
+                <tr class="naglowek-tabeli">
+                    <td colspan="3">CZĘŚCI ROWEROWE</td>
                 </tr>
                 <tr>
                     <td>Napęd</td>
-                    <td>Łańcuch 9-rzędowy z zapinką</td>
-                    <td>Stal utwardzana, 116 ogniw, do rowerów MTB/szosa</td>
-                    <td>10 szt.</td>
-                    <td>32 PLN / szt.</td>
+                    <td>Łańcuch rowerowy</td>
+                    <td>32 PLN</td>
                 </tr>
                 <tr>
                     <td>Hamulce</td>
-                    <td>Klocki hamulcowe tarczowe</td>
-                    <td>Mieszanka żywiczna, pasuje do hamulców Shimano</td>
-                    <td>25 par</td>
-                    <td>12 PLN / para</td>
+                    <td>Klocki hamulcowe</td>
+                    <td>12 PLN</td>
                 </tr>
                 <tr>
-                    <td>Ogumienie</td>
-                    <td>Opona MTB 29x2.25</td>
-                    <td>Opona drutowana, głęboki klockowy bieżnik w teren</td>
-                    <td>10 szt.</td>
-                    <td>38 PLN / szt.</td>
+                    <td>Koła</td>
+                    <td>Opona 29"</td>
+                    <td>38 PLN</td>
                 </tr>
                 <tr>
-                    <td>Napęd</td>
-                    <td>Przerzutka tylna 10-rzędowa</td>
-                    <td>Wózek średni (GS), ze sprzęgłem łańcucha</td>
-                    <td>5 szt.</td>
-                    <td>95 PLN / szt.</td>
-                </tr>
-                <tr>
-                    <td>Ogumienie</td>
-                    <td>Dętka rowerowa 28" Presta</td>
-                    <td>Zawór FV 48mm, odporna na przebicia</td>
-                    <td>50 szt.</td>
-                    <td>9 PLN / szt.</td>
+                    <td>Koła</td>
+                    <td>Dętka 28"</td>
+                    <td>9 PLN</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <!-- ZASADY -->
-    <div class="blok" id="zasady">
-        <h2>Zasady hurtowe i dostawa</h2>
-        <ul>
-            <li><strong>Darmowa dostawa:</strong> Przy zamówieniu za minimum 1500 PLN netto.</li>
-            <li><strong>Płatności:</strong> Pierwsze trzy zamówienia wysyłamy za pobraniem lub po przedpłacie. Dalsze zamówienia z terminem płatności 14 dni.</li>
-            <li><strong>Czas wysyłki:</strong> Zamówienia złożone do godziny 12:00 wysyłamy tego samego dnia.</li>
-        </ul>
-    </div>
-
     <!-- KONTAKT -->
-    <div class="blok" id="kontakt">
-        <h2>Formularz zapytania B2B</h2>
+    <div class="sekcja" id="kontakt">
+        <h2>Kontakt</h2>
+        <p>Chcesz złożyć zamówienie? Napisz do nas!</p>
         <form>
-            <div class="pole-formularza">
-                <label for="firma">Nazwa Twojej Firmy oraz NIP:</label>
-                <input type="text" id="firma" name="firma" required>
-            </div>
-            
-            <div class="pole-formularza">
-                <label for="email">Twój Adres E-mail:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
+            <p>Imię / Nazwa firmy:<br>
+            <input type="text" style="width: 100%;"></p>
 
-            <div class="pole-formularza">
-                <label for="kategoria">Co chcesz zamówić?:</label>
-                <select id="kategoria" name="kategoria">
-                    <option>Kompletne Rowery</option>
-                    <option>Części Rowerowe</option>
-                    <option>Zamówienie Mieszane (Rowery + Części)</option>
-                </select>
-            </div>
+            <p>E-mail:<br>
+            <input type="email" style="width: 100%;"></p>
 
-            <div class="pole-formularza">
-                <label for="wiadomosc">Lista zamawianych produktów / Treść zapytania:</label>
-                <textarea id="wiadomosc" name="wiadomosc" rows="5" required></textarea>
-            </div>
+            <p>Co chcesz zamówić:<br>
+            <textarea style="width: 100%;" rows="4"></textarea></p>
 
-            <button type="submit">Wyślij zapytanie hurtowe</button>
+            <button type="submit">Wyślij</button>
         </form>
     </div>
 
     <!-- STOPKA -->
     <div class="stopka">
-        <p>&copy; 2026 Hurtownia Rowerowa Rowery-Seby. Wszelkie prawa zastrzeżone.</p>
-        <p>Kontakt telefoniczny: +48 987 654 321 | E-mail: hurtownia@rowery-seby.pl</p>
+        <p>Hurtownia Rowery-Seby | Tel: 987-654-321 | Email: hurtownia@rowery-seby.pl</p>
     </div>
-
-</div>
 
 </body>
 </html>
