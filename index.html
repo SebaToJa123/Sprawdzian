@@ -2,7 +2,7 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Hurtownia Rowerowa BeloVelo</title>
+    <title>Hurtownia Rowerowa Rowery-Seby</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,13 +11,13 @@
             color: #333;
         }
         header {
-            background-color: #2c3e50;
+            background-color: #1b4332;
             color: white;
             padding: 15px;
             text-align: center;
         }
         nav {
-            background-color: #34495e;
+            background-color: #2d6a4f;
             padding: 10px;
             text-align: center;
         }
@@ -31,6 +31,7 @@
             background-color: white;
             padding: 20px;
             margin-top: 15px;
+            border-radius: 5px;
         }
         table {
             width: 100%;
@@ -39,12 +40,21 @@
         }
         table, th, td {
             border: 1px solid #ddd;
-            padding: 8px;
+            padding: 10px;
             text-align: left;
         }
         th {
-            background-color: #2c3e50;
+            background-color: #2d6a4f;
             color: white;
+        }
+        ul {
+            line-height: 1.8;
+        }
+        .box {
+            background-color: #e9f5ed;
+            padding: 10px;
+            border-left: 5px solid #2d6a4f;
+            margin-top: 10px;
         }
         footer {
             text-align: center;
@@ -57,84 +67,38 @@
 <body>
 
     <header>
-        <h1>Hurtownia Rowerowa "BeloVelo"</h1>
-        <p>Rowery i części w cenach hurtowych dla sklepów i serwisów</p>
+        <h1>Hurtownia Rowerowa "Rowery-Seby"</h1>
+        <p>Główny dystrybutor rowerów i części zamiennych dla sklepów i serwisów</p>
     </header>
 
     <nav>
         <a href="#o-nas">O nas</a>
-        <a href="#rowery">Rowery</a>
-        <a href="#czesci">Części</a>
+        <a href="#rowery">Sprzedaż Rowerów</a>
+        <a href="#czesci">Części i Akcesoria</a>
+        <a href="#zasady">Zasady Hurtowe</a>
         <a href="#kontakt">Kontakt</a>
     </nav>
 
     <div class="content" id="o-nas">
         <h2>O naszej hurtowni</h2>
-        <p>Zajmujemy się hurtową sprzedażą rowerów miejskich, górskich oraz części zamiennych. Oferujemy szybką wysyłkę i atrakcyjne rabaty dla stałych klientów.</p>
+        <p>Hurtownia <strong>Rowery-Seby</strong> działa na rynku od lat, dostarczając sprzęt najwyższej jakości do sklepów rowerowych, punktów wypożyczalni oraz serwisów w całej Polsce. Oferujemy pełne wsparcie techniczne, szybką realizację zamówień oraz elastyczne warunki finansowe.</p>
     </div>
 
     <div class="content" id="rowery">
-        <h2>Oferta Rowerów</h2>
+        <h2>Sprzedaż Rowerów – Oferta Hurtowa</h2>
+        <p>Prowadzimy hurtową sprzedaż kompletnych rowerów fabrycznie zapakowanych w kartony (do montażu końcowego). Oferujemy następujące kategorie:</p>
+        
         <ul>
-            <li><strong>Rowery Górskie (MTB)</strong> – koła 29", osprzęt Shimano</li>
-            <li><strong>Rowery Miejskie</strong> – ramy damskie i męskie, z koszem</li>
-            <li><strong>Rowery Elektryczne (E-Bike)</strong> – silniki 250W, zasięg do 80 km</li>
+            <li><strong>Rowery Górskie (MTB):</strong> Ramy aluminiowe i karboowe, koła 27.5" oraz 29", amortyzatory powietrzne, napędy 1x12 oraz 2x11. Idealne w trudny teren.</li>
+            <li><strong>Rowery Miejskie i Trekkingowe:</strong> W pełni wyposażone (oświetlenie, bagażniki, błotniki). Przerzutki w piaście (Shimano Nexus) lub zewnętrzne, wygodne siodełka.</li>
+            <li><strong>Rowery Szosowe i Gravel:</strong> Nowoczesne gravele do jazdy po każdej nawierzchni, lekkie ramy, hamulce tarczowe hydrauliczne.</li>
+            <li><strong>Rowery Elektryczne (E-Bike):</strong> Silniki centralne i w piaście, baterie od 400Wh do 750Wh. Szybko rosnący segment rynkowy!</li>
+            <li><strong>Rowery Dziecięce i Młodzieżowe:</strong> Lekkie modele na kołach 16", 20" oraz 24" z bezpiecznymi komponentami.</li>
         </ul>
-    </div>
 
-    <div class="content" id="czesci">
-        <h2>Cennik Hurtowy Części</h2>
         <table>
             <tr>
-                <th>Nazwa części</th>
-                <th>Kategoria</th>
-                <th>Cena hurtowa (netto)</th>
-            </tr>
-            <tr>
-                <td>Łańcuch 9-rzędowy</td>
-                <td>Napęd</td>
-                <td>35 PLN</td>
-            </tr>
-            <tr>
-                <td>Klocki hamulcowe tarczowe</td>
-                <td>Hamulce</td>
-                <td>15 PLN</td>
-            </tr>
-            <tr>
-                <td>Opona 29x2.25 MTB</td>
-                <td>Koła i opony</td>
-                <td>45 PLN</td>
-            </tr>
-            <tr>
-                <td>Przerzutka tylna</td>
-                <td>Napęd</td>
-                <td>85 PLN</td>
-            </tr>
-        </table>
-    </div>
-
-    <div class="content" id="kontakt">
-        <h2>Formularz Kontaktowy B2B</h2>
-        <form>
-            <p>
-                <label for="firma">Nazwa firmy:</label><br>
-                <input type="text" id="firma" name="firma" required>
-            </p>
-            <p>
-                <label for="email">E-mail kontaktowy:</label><br>
-                <input type="email" id="email" name="email" required>
-            </p>
-            <p>
-                <label for="wiadomosc">Wiadomość / Zamówienie:</label><br>
-                <textarea id="wiadomosc" name="wiadomosc" rows="4" cols="40" required></textarea>
-            </p>
-            <button type="submit">Wyślij zapytanie</button>
-        </form>
-    </div>
-
-    <footer>
-        <p>&copy; 2026 Hurtownia BeloVelo. Tel: 123-456-789 | Email: kontakt@belovelo.pl</p>
-    </footer>
-
-</body>
-</html>
+                <th>Kategoria Roweru</th>
+                <th>Przykładowy Model</th>
+                <th>Minimalne zamówienie</th>
+                <th>
