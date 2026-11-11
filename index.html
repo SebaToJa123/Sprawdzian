@@ -2,88 +2,75 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>HURTOWNIA ROWEROWA ROWERY-SEBY - STRONA GŁÓWNA</title>
+    <title>Hurtownia Rowerowa Rowery-Seby</title>
     <style>
-        /* Stylistyka w klasycznym, mocno amatorskim stylu */
+        /* Prosty, lekko amatorski wygląd strony */
         body {
-            font-family: "Comic Sans MS", "Times New Roman", sans-serif;
-            background-color: #00ffff; /* Błękitne tło strony */
+            font-family: Arial, sans-serif;
+            background-color: #eeeeee;
             color: #000000;
-            margin: 10px;
-            padding: 0;
+            margin: 0;
+            padding: 20px;
         }
 
-        /* Główny kontener z grubą ramką */
-        .wrapper {
-            max-width: 900px;
+        /* Główny kontener na środku z prostą ramką */
+        .glowne-okno {
+            width: 850px;
             margin: 0 auto;
             background-color: #ffffff;
-            border: 6px ridge #ff0000; /* Czerwona, wypukła ramka */
+            border: 2px solid #000000;
             padding: 15px;
         }
 
-        /* Nagłówek */
-        header {
-            background-color: #0000ff;
-            color: #ffff00;
+        /* Nagłówek strony */
+        .naglowek {
+            background-color: #003366;
+            color: #ffffff;
             text-align: center;
             padding: 15px;
-            border: 4px inset #000000;
+            border: 1px solid #000000;
         }
 
-        header h1 {
-            font-size: 28px;
-            margin: 0 0 5px 0;
-            text-transform: uppercase;
-            text-decoration: underline;
-        }
-
-        header p {
-            font-size: 15px;
+        .naglowek h1 {
             margin: 0;
-            font-weight: bold;
+            font-size: 26px;
+        }
+
+        .naglowek p {
+            margin: 5px 0 0 0;
+            font-size: 14px;
         }
 
         /* Menu nawigacji */
-        nav {
-            background-color: #ffff00;
+        .menu {
+            background-color: #dddddd;
+            border: 1px solid #000000;
             margin: 15px 0;
             padding: 8px;
             text-align: center;
-            border: 3px double #000000;
         }
 
-        nav a {
-            color: #0000ff;
+        .menu a {
+            color: #003366;
             font-weight: bold;
             text-decoration: underline;
-            margin: 0 8px;
-            font-size: 15px;
-            background-color: #ffffff;
-            padding: 4px 8px;
-            border: 2px solid #000000;
+            margin: 0 10px;
         }
 
-        nav a:hover {
-            background-color: #ff0000;
-            color: #ffffff;
-        }
-
-        /* Sekcje z treścią */
-        .sekcja {
-            background-color: #ffffcc; /* Żółtawe tło sekcji */
-            border: 3px solid #008000;
+        /* Blok sekcji */
+        .blok {
+            border: 1px solid #999999;
+            background-color: #fafafa;
             padding: 12px;
             margin-bottom: 15px;
         }
 
-        h2 {
-            color: #0000ff;
-            background-color: #ccffff;
-            padding: 5px;
-            border: 1px solid #0000ff;
+        .blok h2 {
+            color: #003366;
+            font-size: 18px;
             margin-top: 0;
-            font-size: 20px;
+            border-bottom: 1px solid #003366;
+            padding-bottom: 3px;
         }
 
         /* Tabela z rowerami i częściami */
@@ -95,124 +82,110 @@
         }
 
         table, th, td {
-            border: 3px solid #000000;
+            border: 1px solid #000000;
         }
 
         th {
-            background-color: #ff0000;
-            color: #ffffff;
-            padding: 8px;
+            background-color: #cccccc;
+            color: #000000;
+            padding: 6px;
             text-align: left;
             font-size: 13px;
         }
 
         td {
             padding: 6px;
-            font-size: 12px;
+            font-size: 13px;
         }
 
-        .kategoria-naglowek {
-            background-color: #00ff00;
+        .naglowek-kategorii {
+            background-color: #ffffcc;
             font-weight: bold;
-            color: #000000;
             text-align: center;
-            font-size: 14px;
         }
 
-        tr:nth-child(even) {
-            background-color: #e6e6e6;
-        }
-
-        /* Formularz */
-        .form-group {
+        /* Formularz kontaktowy */
+        .pole-formularza {
             margin-bottom: 10px;
         }
 
-        .form-group label {
+        .pole-formularza label {
             display: block;
             font-weight: bold;
-            margin-bottom: 2px;
-            color: #800080;
+            font-size: 13px;
         }
 
-        .form-group input, .form-group select, .form-group textarea {
-            width: 95%;
-            padding: 4px;
-            border: 2px solid #000000;
-            background-color: #ffffff;
-            font-family: inherit;
+        .pole-formularza input, .pole-formularza select, .pole-formularza textarea {
+            width: 98%;
+            padding: 5px;
+            border: 1px solid #000000;
+            font-family: Arial, sans-serif;
         }
 
         button {
-            background-color: #00ff00;
-            color: #000000;
+            background-color: #003366;
+            color: #ffffff;
             font-weight: bold;
-            font-size: 15px;
             padding: 8px 15px;
-            border: 3px outset #000000;
+            border: 1px solid #000000;
             cursor: pointer;
         }
 
-        button:hover {
-            background-color: #ffff00;
-        }
-
         /* Stopka */
-        footer {
-            background-color: #0000ff;
+        .stopka {
+            background-color: #003366;
             color: #ffffff;
             text-align: center;
             padding: 10px;
-            margin-top: 15px;
-            border: 3px solid #000000;
-            font-size: 13px;
+            font-size: 12px;
+            border: 1px solid #000000;
         }
     </style>
 </head>
 <body>
 
-<div class="wrapper">
+<div class="glowne-okno">
 
     <!-- NAGŁÓWEK -->
-    <header>
-        <h1>!!! HURTOWNIA ROWEROWA ROWERY-SEBY !!!</h1>
-        <p>SUPER SPRZĘT I CZĘŚCI ROWEROWE - SPRZEDAŻ DLA FIRM I SKLEPÓW</p>
-    </header>
-
-    <!-- MENU -->
-    <nav>
-        <a href="#o-nas">[ O NAS ]</a>
-        <a href="#oferta">[ OFERTA I CENNIK ]</a>
-        <a href="#zasady">[ ZASADY HURTU ]</a>
-        <a href="#kontakt">[ KONTAKT B2B ]</a>
-    </nav>
-
-    <!-- O NAS -->
-    <div class="sekcja" id="o-nas">
-        <h2>--- O NASZEJ FIRMIE ---</h2>
-        <p>Witamy na stronie hurtowni <strong>Rowery-Seby</strong>! Zajmujemy się sprzedażą hurtową rowerów oraz części zamiennych od ponad 10 lat!</p>
-        <p>Zaopatrujemy sklepy rowerowe, serwisy, wypożyczalnie i szkółki kolarskie. Posiadamy duży magazyn, szybką wysyłkę oraz super niskie ceny hurtowe!</p>
+    <div class="naglowek">
+        <h1>Hurtownia Rowerowa "Rowery-Seby"</h1>
+        <p>Sprzedaż hurtowa rowerów i części zamiennych dla serwisów i sklepów</p>
     </div>
 
-    <!-- OFERTA I TABELA -->
-    <div class="sekcja" id="oferta">
-        <h2>--- PEŁNA OFERTA I CENNIK HURTOWY ---</h2>
-        <p>Poniżej znajduje się tabela z naszymi głównymi rowerami i częściami zamiennymi dostępnymi od ręki:</p>
+    <!-- MENU NAWIGACJI -->
+    <div class="menu">
+        <a href="#o-nas">O nas</a> | 
+        <a href="#oferta">Oferta i Tabela Cennikowa</a> | 
+        <a href="#zasady">Zasady współpracy</a> | 
+        <a href="#kontakt">Formularz zamówienia</a>
+    </div>
+
+    <!-- O NAS -->
+    <div class="blok" id="o-nas">
+        <h2>O naszej hurtowni</h2>
+        <p>Strona hurtowni <strong>Rowery-Seby</strong>. Sprzedajemy rowery oraz części do rowerów na terenie całego kraju. Ofertę kierujemy do sklepów rowerowych, punktów serwisowych i wypożyczalni.</p>
+        <p>Posiadamy własny magazyn i wysyłamy towary kurierem. Oferujemy niskie ceny przy zakupach hurtowych.</p>
+    </div>
+
+    <!-- TABELA I OFERTA -->
+    <div class="blok" id="oferta">
+        <h2>Tabela produktów: Rowery i Części Rowerowe</h2>
+        <p>W poniższej tabeli znajduje się spadek cenowy oraz zestawienie najpopularniejszych rowerów i części dostępnych w magazynie:</p>
 
         <table>
             <thead>
                 <tr>
                     <th>Typ sprzętu</th>
                     <th>Nazwa artykułu / Model</th>
-                    <th>Opis / Specyfikacja</th>
+                    <th>Opis techniczny</th>
                     <th>Min. zamówienie</th>
                     <th>Cena hurtowa (netto)</th>
                 </tr>
             </thead>
             <tbody>
                 <!-- ROWERY -->
-                <tr class="kategoria-naglowek">
-                    <td colspan="5">=== ROWERY FABRYCZNIE NOWE ===</td>
+                <tr class="naglowek-kategorii">
+                    <td colspan="5">ROWERY FABRYCZNE</td>
                 </tr>
                 <tr>
                     <td>Rower Górski</td>
@@ -244,8 +217,8 @@
                 </tr>
 
                 <!-- CZĘŚCI ROWEROWE -->
-                <tr class="kategoria-naglowek">
-                    <td colspan="5">=== CZĘŚCI I AKCESORIA ROWEROWE ===</td>
+                <tr class="naglowek-kategorii">
+                    <td colspan="5">CZĘŚCI I AKCESORIA ROWEROWE</td>
                 </tr>
                 <tr>
                     <td>Napęd</td>
@@ -257,7 +230,7 @@
                 <tr>
                     <td>Hamulce</td>
                     <td>Klocki hamulcowe tarczowe</td>
-                    <td>Mieszanka żywiczna, ciche działanie, pasuje do Shimano</td>
+                    <td>Mieszanka żywiczna, pasuje do hamulców Shimano</td>
                     <td>25 par</td>
                     <td>12 PLN / para</td>
                 </tr>
@@ -271,14 +244,14 @@
                 <tr>
                     <td>Napęd</td>
                     <td>Przerzutka tylna 10-rzędowa</td>
-                    <td>Wózek średni (GS), wbudowane sprzęgło łańcucha</td>
+                    <td>Wózek średni (GS), ze sprzęgłem łańcucha</td>
                     <td>5 szt.</td>
                     <td>95 PLN / szt.</td>
                 </tr>
                 <tr>
                     <td>Ogumienie</td>
                     <td>Dętka rowerowa 28" Presta</td>
-                    <td>Zawór włoski FV 48mm, odporna na przebicia</td>
+                    <td>Zawór FV 48mm, odporna na przebicia</td>
                     <td>50 szt.</td>
                     <td>9 PLN / szt.</td>
                 </tr>
@@ -287,30 +260,30 @@
     </div>
 
     <!-- ZASADY -->
-    <div class="sekcja" id="zasady">
-        <h2>--- ZASADY ZAMAWIANIA ---</h2>
+    <div class="blok" id="zasady">
+        <h2>Zasady hurtowe i dostawa</h2>
         <ul>
-            <li><strong>Darmowa Dostawa:</strong> Przy zamówieniu od 1500 PLN netto!</li>
-            <li><strong>Płatność:</strong> Przy pierwszych 3 zamówieniach płatność przy odbiorze lub przedpłata. Potem przelew 14 dni.</li>
-            <li><strong>Wysyłka:</strong> Zamówienia złożone do godziny 12:00 wysyłamy jeszcze tego samego dnia!</li>
+            <li><strong>Darmowa dostawa:</strong> Przy zamówieniu za minimum 1500 PLN netto.</li>
+            <li><strong>Płatności:</strong> Pierwsze trzy zamówienia wysyłamy za pobraniem lub po przedpłacie. Dalsze zamówienia z terminem płatności 14 dni.</li>
+            <li><strong>Czas wysyłki:</strong> Zamówienia złożone do godziny 12:00 wysyłamy tego samego dnia.</li>
         </ul>
     </div>
 
     <!-- KONTAKT -->
-    <div class="sekcja" id="kontakt">
-        <h2>--- FORMULARZ ZAMÓWIENIA / KONTAKT ---</h2>
+    <div class="blok" id="kontakt">
+        <h2>Formularz zapytania B2B</h2>
         <form>
-            <div class="form-group">
-                <label for="firma">Nazwa Twojej Firmy i NIP:</label>
-                <input type="text" id="firma" name="firma" placeholder="np. Sklep Rowerowy NIP 1234567890" required>
+            <div class="pole-formularza">
+                <label for="firma">Nazwa Twojej Firmy oraz NIP:</label>
+                <input type="text" id="firma" name="firma" required>
             </div>
             
-            <div class="form-group">
+            <div class="pole-formularza">
                 <label for="email">Twój Adres E-mail:</label>
-                <input type="email" id="email" name="email" placeholder="email@sklep.pl" required>
+                <input type="email" id="email" name="email" required>
             </div>
 
-            <div class="form-group">
+            <div class="pole-formularza">
                 <label for="kategoria">Co chcesz zamówić?:</label>
                 <select id="kategoria" name="kategoria">
                     <option>Kompletne Rowery</option>
@@ -319,20 +292,20 @@
                 </select>
             </div>
 
-            <div class="form-group">
-                <label for="wiadomosc">Lista zamawianych produktów / Wiadomość:</label>
-                <textarea id="wiadomosc" name="wiadomosc" rows="5" placeholder="Wpisz zamawiane modele i liczby sztuk..." required></textarea>
+            <div class="pole-formularza">
+                <label for="wiadomosc">Lista zamawianych produktów / Treść zapytania:</label>
+                <textarea id="wiadomosc" name="wiadomosc" rows="5" required></textarea>
             </div>
 
-            <button type="submit">WYŚLIJ ZAPYTANIE HURTOWE</button>
+            <button type="submit">Wyślij zapytanie hurtowe</button>
         </form>
     </div>
 
     <!-- STOPKA -->
-    <footer>
-        <p>&copy; 2026 Hurtownia Rowerowa Rowery-Seby. Wszelkie Prawa Zastrzeżone.</p>
-        <p>Infolinia B2B: +48 987 654 321 | E-mail: hurtownia@rowery-seby.pl</p>
-    </footer>
+    <div class="stopka">
+        <p>&copy; 2026 Hurtownia Rowerowa Rowery-Seby. Wszelkie prawa zastrzeżone.</p>
+        <p>Kontakt telefoniczny: +48 987 654 321 | E-mail: hurtownia@rowery-seby.pl</p>
+    </div>
 
 </div>
 
